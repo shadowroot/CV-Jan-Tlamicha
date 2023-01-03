@@ -1,0 +1,182 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+    
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{hyperref}
+
+% personal data
+\name{Jan}{Tlamicha}
+\title{Životopis}                               % optional, remove / comment the line if not wanted
+%\address{Slunečná 2104}{54401 Dvůr Králové nad Labem}{Česká republika}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{Dusíkova 906/41}{638 00 Brno-sever-Lesná}{Česká republika}
+\phone[mobile]{+420~730~693~356}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{shadow.to.root@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{IMG_2507_1}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Vzdělání}
+\cventry{2008--2012}{Maturita}{SPŠ Hradecka, obor elektrotechnika}{Hradec Králové}{}{} %{\textit{Grade}}{Description} arguments 3 to 6 can be left empty
+	
+\cventry{2012--2016}{Bakalářský titul}{ČVUT Fakulta informačních technologií}{Praha}{}{}%{\textit{Grade}}{Description}
+
+
+\section{Pracovní zkušenosti}
+\subsection{Programátorská}
+
+
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+
+\cventry{2014}{Internship Software Developer}{Monster Technologies}{}{}{Vývoj webových aplikací používajíci jazyk C\# technologii a ASP.NET framework.}
+\cventry{2015--2017}{Fullstack Developer}{EVE Technologies}{}{}{Vývoj mobilních aplikací pomocí Ionic Frameworku, kde aplikační logiku na frontendu obstarává AngularJS s NodeJS backendem. Ten používá Loopback framework pro tvorbu datových modelů a jednoduššího přístupu pomocí REST API. 
+%Mobile application using Ionic framework with AngularJS a NodeJS backend.
+}
+\subsection{Jiná}
+
+\cventry{2010}{Montáž bezdrátového internetu}{MKI Net}{}{}{Fyzická montáž a konfigurace bezdrátového zařízení.}
+
+\section{Jazyky}
+\cvitemwithcomment{Angličtina}{}{Pouze školní povinné předměty, certifikát nevlastním.}
+
+\section{Programátorské zkušenosti}
+\cvitem{Java}{Vývoj webových aplikací pomocí následujících frameworků: Spring, Java EE (ORM - Hibernate).}
+\cvitem{Python}{Python3 používaný hlavně pro skriptování v systému a na cokoliv, co je třeba udělat rychle a nezáleží přitom na výkonu samotné aplikace nebo nedostatků runtimu(CPython - GIL).}
+\cvitem{C/C++}{Vývoj školních projektů ve standardu C++11.}
+\cvitem{Android}{Vývoj aplikace, která umí pomocí elektronických filtrů rozpoznat DTMF tóny. Aplikace je schopna tyto tóny vytvářet.}
+\cvitem{Administrace Linuxu}{Vytváření shell scriptů a základní množiny programů jakými jsou awk, sort, grep, a další.}
+\cvitem{Arduino}{Nejlepší je jeho použití pro systémy pracující v reálném čase(bez OS), kde stačí jeho omezený výpočetní výkon. Používal jsem jej na ovládání modelářského vybavení jakými jsou servo motory a regulátory pro střídavé i stejnosměrné motory (PWM řízení).}
+\cvitem{Angular JS}{Pracoval jsem převážně s verzemi 1.x. Nejnovější verze Angularu používá typovaný jazyk Typescript.}
+\cvitem{Assembler}{Hlavní využití je v GDB.}
+\cvitem{NodeJS}{Používal jsem zejména Loopback framework, který je vybudován na základě Express frameworku.}
+\cvitem{PostgreSQL}{Rozbor prováděcích plánů SQL dotazů a jejich optimalizace použitím správných algoritmů. }
+\cvitem{Go}{Bezpečný jazyk, který obsahuje dobré nástroje pro vytváření vícevláknových aplikací.}
+
+
+\section{Zájmy}
+\cvitem{RC models}{Tvorba RC modelů.}
+\cvitem{CTF}{Rekreační hledání vlajky, kterou lze získat vyřešením určitého problému.}
+\cvitem{Arduino}{Pomocí Arduina realizuji různé experimenty s elektronikou.}
+\cvitem{Robotika}{Experimenty s Arduinem a STM32 na ovládání modelářských servo motorů, krokových motorů pomocí PWM a operačních zesilovačů.}
+\cvitem{3D tisk}{
+Tisk na klonu tiskárny Prusa I3.
+}
+\cvitem{Hardware}{Poznání hardwaru jeho analýzou a vždy je dobré poznat, kdy je lepší použít HW, a kdy víceúčelový procesor a program. Při vysokoúrovňovém programování přestane mít programátor přehled o tom, co se děje na nižších úrovních, pokud to dobrovolně nestuduje navíc. }
+\section{Doplňující informace}
+\cvitem{Github}{\url{https://github.com/shadowroot}}
+\cvitem{LinkedIn}{\url{https://www.linkedin.com/in/jan-tlamicha-04472059}}
+\cvitem{DTMF application}{\url{https://play.google.com/store/apps/details?id=cz.muni.fi.jonny.dtmf}}
+%comment
+\iffalse
+
+\section{Extra 1}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+\section{Extra 2}
+\cvlistdoubleitem{Item 1}{Item 4}
+\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+\end{cvcolumns}
+
+
+
+%end comment
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\opening{Dobrý den,}
+\closing{S pozdravem}
+\date{}
+\makelettertitle
+Rád bych se přidal k Vaší společnosti, protože se mi její produkty velice líbí. Velmi rád se učím novým technologiím, jazykům i postupům. Když je dostatek času, vyhledávám i zkouším nové technologie z vlastní iniciativy a pokud vím, že by se to dalo udělat lépe nebo efektivněji dostatečně na to, aby se to vyplatilo tak se o to pokusím sám.
+
+\makeletterclosing
+
+\fi
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

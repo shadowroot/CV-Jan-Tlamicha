@@ -1,0 +1,181 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jan}{Tlamicha}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{Slunečná 2104}{54401 Dvůr Králové nad Labem}{Česká republika}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{Karolíny Světlé 2136}{544 01 Dvůr Králové nad Labem}{Česká republika}
+\phone[mobile]{+420~730~693~356}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{shadow.to.root@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{IMG_2507_1}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2008--2012}{High school graduate}{SPŠ Hradecka, obor elektrotechnika}{Hradec Králové}{}{} %{\textit{Grade}}{Description} arguments 3 to 6 can be left empty
+\cventry{2012--2016}{Bachelor's Degree}{ČVUT Fakulta informačních technologií}{Praha}{}{}%{\textit{Grade}}{Description}
+
+
+\section{Experience}
+\subsection{Developer}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}
+
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+
+\cventry{2014}{Internship Software Developer}{Monster Technologies}{}{}{Web application development using C\# language and ASP.NET framework.}
+\cventry{2015--2017}{Fullstack Developer}{EVE Technologies}{}{}{Mobile application development using Ionic framework, which is basically WebView and single page inside. Front-end code was written in AngularJS framework. Back-end was running NodeJS server with Loopback framework which had REST API implemented for communication with client.
+%Mobile application using Ionic framework with AngularJS a NodeJS backend.
+}
+\cventry{2018--2023}{Customizations}{Mavenir}{}{}{
+A lot of integration work with Python/Lua/Javascript. Fullstack Javascript - backend NodeJS, frontend  - React/VueJS frameworks. Main projects were written in Python (Pyramid/Flask). A lot of experience with protocol analyzing - Wireshark - I had even written a Lua dissector. OS, which SW was developed for was RHEL based. I had done a lot of bash scripting too. Little experience with K8S. 
+}
+\subsection{Other}
+
+\cventry{2010}{Installing wireless internet}{MKI Net}{}{}{The job was to put antenna/device on house and then configure it.}
+
+
+\section{Computer skills}
+\cvitem{Python}{
+I prefer using python mainly for scripting in operating system and everything which needs to be written quickly or performance of the application don't matter much. With cpython interpreter, there are execution limitations GIL(global interpreter lock).
+%Python3 používaný hlavně pro skriptování v systému a na cokoliv, co je třeba udělat rychle a nezáleží přitom na výkonu samotné aplikace nebo nedostatků runtimu(CPython - GIL).
+}
+\cvitem{NodeJS}{
+I've developed back-end of application, which for communication with AngularJS I had used REST API. REST API was for data access and methods with JSON encoding. 
+%Používal jsem zejména Loopback framework, který je vybudován na základě Express frameworku.
+}
+\cvitem{C/C++}{ESP32/8266, Arduino for home automation and similar activities. When something needed to run fast and not so much secure (Rust is what I choose in this situations). Or when something needs to be translated to shellcode, but nowadays it's usually social engineering. Well currently it's mostly development for MCU with Arduino framework, but I had looked at ESP-IDF framework and I have to admit, it's very nice and more C like. Object oriented programming paradigm is not very suitable for MCUs with low memory and flash for program (AtMEGA has Harvard architecture).}
+\cvitem{Android}{
+I've developed application which can decode DTMF tones using software filters. This application is fully configurable(frequencies, tones lenght, ..). Application can also generator tones.
+It's in Kotlin development right now, but not published yet and the old version was no longer agreeable with Google Play license agreement.
+%Vývoj aplikace, která umí pomocí elektronických filtrů rozpoznat DTMF tóny. Aplikace je schopna tyto tóny vytvářet.
+}
+\cvitem{Linux Administration}{
+Creating shell scripts(bash console) a basic control program set(sort, grep, awk and others). 
+%Vytváření shell scriptů použitím konsole Bash a základní množiny programů jakými jsou awk, sort, grep, a další.
+}
+\cvitem{Go}{
+I really like Go now, because it is swift, has low memory usage and perfect concurrency (goroutines, channels). It's also much more secure than C/C++(no bad pointer aritmetics, memory leaks). Goroutines are more effective than operating system threads(many goroutines could be multiplexed into system thread). 
+%Bezpečný jazyk, který obsahuje dobré nástroje pro vytváření vícevláknových aplikací.
+}
+\cvitem{Rust}{
+I had just started with Rust, but I like it so far. I haven't done any production work yet. Even hobby projects I have in progress state.
+%Bezpečný jazyk, který obsahuje dobré nástroje pro vytváření vícevláknových aplikací.
+}
+\cvitem{Angular JS}{
+I worked on Angular 1.x without using Typescript. It's great that Angular 2 has Typescript language mandatory. But best move in Angular 2 was avoiding \$scope.\$watch, which was performance nightmare. For expensive UI are workers better, than main thread code or UI can freeze. 
+%Pracoval jsem převážně s verzemi 1.x. Nejnovější verze Angularu používá typovaný jazyk Typescript.
+}
+\cvitem{Vue JS}{
+Event based UI interaction.
+%Pracoval jsem převážně s verzemi 1.x. Nejnovější verze Angularu používá typovaný jazyk Typescript.
+}
+\cvitem{React}{
+React + Redux - I have to admit that Redux is a bit of a hell, but it's not badly designed.
+%Pracoval jsem převážně s verzemi 1.x. Nejnovější verze Angularu používá typovaný jazyk Typescript.
+}
+\cvitem{Assembler}{
+I used to program old 8051 MCUs. It's also very good to know when you are debugging compiled programs using GDB. Nowadays assembler is useful in specific CPU extension sets, which are normally done in library like STL.
+%Hlavní využití je v GDB.
+}
+
+\cvitem{PostgreSQL}{
+In school I have learned analyzing execution plans and optimizing it by indexes and correct queries using them. 
+%Rozbor prováděcích plánů SQL dotazů a jejich optimalizace použitím správných algoritmů. 
+}
+
+
+\cvitem{Java}{Back-end web development using following frameworks: Spring(I prefer more than Java EE), Java EE ,ORM - Hibernate. Spring is great, because it's composed from libraries and you can add any library you need for achieving your goals.}
+
+
+\section{Hobbies}
+\cvitem{AI}{In my opinion it's glorified machine learning, I mean deep neural networks. It's just statistics ... fitting curve if you know what I mean by that. Keras is my favourite framework. Transformers are very interesting concept.}
+\cvitem{Biological swarm bots}{I like concept of copying nature evolution and it was not copied enough yet. I think we are capable of creating true AI, but it will be on carbon based hardware in my thaughts. I'd like to develop hardware like this. Human body has decentralized architecture and cells are using chemical signaling with other cells in reach. For example if cell stops communicating with cells in range and starts just uncontrollably creating copies itself, we call it cancer and those cells are copied with that fault too, so it's exponential.}
+\cvitem{Table tennis}{
+I really like playing this, however I'm quite slow for that.
+
+}
+\cvitem{RC models}{
+Crafting RC models, the latest one is quadcopter with experimental control board.
+%Tvorba RC modelů.
+}
+\cvitem{CTF}{
+Capture the flag is a game, where objective is to find flag hidden in application or in file hidden in the system.
+%Rekreační hledání vlajky, kterou lze získat vyřešením určitého problému.
+}
+\cvitem{Robotics}{
+I have experimented with STM32 as a brain for control actuators(motors, servos, ..) and sensor reading for internal logic.
+%Experimenty s Arduinem a STM32 na ovládání modelářských servo motorů, krokových motorů pomocí PWM a operačních zesilovačů.
+}
+\cvitem{3D printer}{
+I like to print items on Prusa I3 clone with Marlin firmware. My practical bachelor thesis was to construct 3D printer emulator, so I have now better understanding of GCode. Right now Klipper is better choise for me, than Marlin.
+%Tisk na klonu tiskárny Prusa I3.
+}
+%DODO
+\cvitem{Hardware}{In my opinion software development using high level languages to create applications. Without knowing the hardware properly, this level of abstraction could cause performance issues (bad cache usage), even vulnerabilities like Specter, etc.. Not just PC hardware, but any hardware you can learn, even time is very limited.}
+
+\section{Extra}
+\cvitem{Github}{\url{https://github.com/shadowroot}}
+\cvitem{LinkedIn}{\url{https://www.linkedin.com/in/jan-tlamicha-04472059}}
+\cvitem{DTMF application}{\url{https://play.google.com/store/apps/details?id=cz.muni.fi.jonny.dtmf}}
+
+
+
+\end{document}
